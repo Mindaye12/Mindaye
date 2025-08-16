@@ -20,6 +20,9 @@
         a:hover {
             text-decoration: underline;
         }
+        html {
+            scroll-behavior: smooth;
+        }
         /* --- Header --- */
         header {
             background-color: #fff;
@@ -50,6 +53,7 @@
         .hero img {
             width: 150px;
             height: 150px;
+            max-width: 40%;
             border-radius: 50%;
             object-fit: cover;
         }
@@ -66,8 +70,22 @@
             display: inline-block;
             padding-bottom: 5px;
         }
+        section:nth-of-type(even) {
+            background-color: #f0f4f8;
+        }
         .portfolio-item {
             margin-bottom: 20px;
+        }
+        .portfolio-item a {
+            display: inline-block;
+            padding: 8px 16px;
+            background-color: #0077cc;
+            color: white;
+            border-radius: 4px;
+            margin-top: 5px;
+        }
+        .portfolio-item a:hover {
+            background-color: #005fa3;
         }
         footer {
             text-align: center;
@@ -102,7 +120,7 @@
         <p>
             Hello! I am Mindaye B Defaru, a passionate electromechanical engineer specializing in robotics,
             automation, and embedded systems. I have hands-on experience with Raspberry Pi, Arduino, and SolidWorks,
-            and I focus on creating innovative solutions for real-world problems in sectors such as tech, agriculture and healthcare.
+            and I focus on creating innovative solutions for real-world problems in sectors such as tech, agriculture, and healthcare.
         </p>
     </section>
 
@@ -111,7 +129,7 @@
         <h2>Portfolio</h2>
         <div class="portfolio-item">
             <strong>Phase 2 Project Video:</strong> 
-            <a href="YOUR_YOUTUBE_LINK_HERE" target="_blank">Watch on YouTube</a>
+            <a href="https://youtu.be/Ct_lYLIblRg?si=K20-Q9tMXWyL6WxQ" target="_blank">Watch on YouTube</a>
         </div>
         <div class="portfolio-item">
             <strong>Phase 2 Project Slide Deck:</strong> 
@@ -122,7 +140,13 @@
     <!-- Elevator Pitch Section -->
     <section id="elevator">
         <h2>Elevator Pitch</h2>
-        <p>Video coming soon!</p>
+        <p>
+            Hello! I am Mindaye B Defaru, an electromechanical engineer passionate about robotics and automation.
+            I specialize in designing practical solutions that bridge technology with real-world challenges, particularly
+            in agriculture and healthcare. My hands-on experience with Raspberry Pi, Arduino, and SolidWorks allows me
+            to prototype efficient, innovative systems quickly. I aspire to lead projects that bring sustainable,
+            tech-driven impact to communities, leveraging automation and smart robotics to solve everyday problems.
+        </p>
     </section>
 
     <!-- Footer -->
@@ -132,3 +156,5 @@
 
 </body>
 </html>
+
+
